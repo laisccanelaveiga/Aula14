@@ -1,0 +1,45 @@
+-- SELECT * FROM cadastro_produtos;
+-- SELECT produto, `preço unitario` FROM cadastro_produtos;
+/*
+SELECT * FROM cadastro_produtos
+WHERE `preço unitario` < 20;
+*/
+/*
+SELECT * FROM cadastro_produtos
+WHERE marca = 'logitech';
+*/
+/*
+SELECT * FROM cadastro_produtos
+WHERE marca = 'hashtag'
+AND `preço unitario` > 25;
+*/
+/*
+SELECT * FROM cadastro_produtos
+WHERE `tipo do produto` = 'mouse'
+AND (marca='logitech' OR marca = 'multilaser')
+
+ORDER BY `preço unitario` ASC; --DEC
+*/
+
+-- Atividade
+-- SELECT * FROM materiais_construcao;
+-- SELECT produto, preco FROM materiais_construcao;
+/*
+SELECT * FROM materiais_construcao
+WHERE categoria = 'cimento';
+*/
+/*
+SELECT * FROM materiais_construcao
+WHERE preco > 200;
+*/
+/*
+SELECT * FROM materiais_construcao
+WHERE categoria = 'agregado';
+*/
+/*
+SELECT * FROM materiais_construcao
+WHERE categoria = 'cimento'
+AND `quantidade_vendida` > 3000;
+*/
+SELECT * FROM materiais_construcao
+WHERE (fornecedor = 'local' OR fornecedor = 'votoran');
